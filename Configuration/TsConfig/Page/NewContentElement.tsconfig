@@ -1,0 +1,27 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+    elements {
+
+        UncachedPlugin1 {
+           iconIdentifier = actions-document-synchronize
+           title = Uncached plugin (Example Email)
+           tt_content_defValues {
+               CType = list
+               list_type = exampleemail_uncachedplugin1
+           }
+       }
+
+        CachedPlugin1 {
+           iconIdentifier = actions-document
+           title = Cached plugin (Example Email)
+           tt_content_defValues {
+               CType = list
+               list_type = exampleemail_cachedplugin1
+           }
+       }
+
+    }
+
+    show := addToList(UncachedPlugin1)
+    show := addToList(CachedPlugin1)
+}
+

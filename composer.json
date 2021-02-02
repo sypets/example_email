@@ -1,0 +1,23 @@
+{
+  "name": "sypets/example-email",
+  "description": "Example plugins with email link",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name" : "Sybille Peters",
+      "email": "sypets@gmx.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": ">=9.5.0 <10.4.999",
+    "typo3/cms-extbase": ">=9.5.0 <10.4.999",
+    "typo3/cms-fluid": ">=9.5.0 <10.4.999"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sypets\\ExampleEmail\\": "Classes/"
+    }
+  }
+}
